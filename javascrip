@@ -1,0 +1,45 @@
+let $ = document.querySelector.bind(document);
+
+/*tratativa de salvar*/
+
+let lancamentos = [];
+
+function lancar(event) {
+    event.preventDefault();
+    let lancamento = {
+        Nome: $('#Nome').value,
+        Tel: $('#Tel').value,
+        Email: $('#Email').value,
+    };
+
+    lancamentos.push(lancamento);
+    limparFormulario();
+        $('#Nome').focus();
+}
+function limparFormulario(){
+    $('#Nome').value = '';
+    $('#Tel').value = '';
+    $('#Email').value = '';
+}
+function renderizarLancamento{
+    if(lancamentos){
+        let htmlLancamentos = '';
+
+        for(let i = lancamentos.length -1; i > -1; i--){
+            let lancamento = lancamentos[i];
+            let direita = document.getElementById('.direita')
+            
+        let html = `
+            <div class="${direita}">
+            <div class="descriçaoLancamento">
+                <span class=""
+
+            
+
+        
+            </div>
+        `
+
+        }
+    }
+}
